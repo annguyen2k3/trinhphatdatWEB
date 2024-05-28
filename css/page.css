@@ -1,0 +1,28 @@
+.main .title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 35px;    
+    font-weight: 700;
+    padding: 10px 0px;
+    background-color: var(--color-news); 
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.main .img{
+    text-align: center;
+    align-items: center;
+    margin: 20px;
+}
+.main .img img{
+    border-radius: 5px;
+}
+.main .main-content{
+    margin: 0 auto;
+    line-height: 1.5;
+    font-size: 16px;
+    background-color: var(--color-news);
+    border-radius: 5px;
+}
+.main .main-content p{
+    margin: 10px 0px;
+}

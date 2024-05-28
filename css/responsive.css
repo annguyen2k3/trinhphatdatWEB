@@ -1,0 +1,125 @@
+/* PC */
+@media (min-width: 1024px) {
+    
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    #fixed-header{
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    #fixed-header .menu.responsive .logo{
+        display: none;
+    }
+    #fixed-header .menu ul li:not(:first-child) {
+        display: none;
+    }
+    li.list-item button{
+        top: -6px;
+        left: 147px;
+    }
+    .menu .icon{
+        width: 100%;
+        text-align: right;
+    }
+    .menu .icon{
+        display: block;
+    }
+    .menu .icon i {
+        /* width: 100%; */
+        margin-right: 20px;
+        color: aliceblue;
+    }
+
+    #fixed-header .menu.responsive ul li {
+        display: block;
+        width: auto;
+        text-align: left;
+    }
+    #fixed-header .menu.responsive .search {
+        display: block;
+        position: relative;
+        top: -17px;
+    }
+    #fixed-header .menu.responsive ul {
+        display: block;
+    }
+    .menu.responsive .icon {
+        position: relative;
+        right: 0;
+        top: -153px;
+        float: right;
+    }
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    #fixed-header{
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    #fixed-header .menu.responsive .logo{
+        display: none;
+    }
+    #fixed-header .menu ul li:not(:first-child) {
+        display: none;
+    }
+    li.list-item button{
+        top: -6px;
+        left: 147px;
+    }
+    .menu .icon{
+        width: 100%;
+        text-align: right;
+    }
+    .menu .icon{
+        display: block;
+    }
+    .menu .icon i {
+        margin-right: 20px;
+        color: aliceblue;
+    }
+
+    #fixed-header .menu.responsive ul li {
+        display: block;
+        width: auto;
+        text-align: left;
+    }
+    #fixed-header .menu.responsive .search {
+        display: block;
+        position: relative;
+        top: -17px;
+    }
+    #fixed-header .menu.responsive ul {
+        display: block;
+    }
+    .menu.responsive .icon {
+        position: relative;
+        right: 0;
+        top: -153px;
+        float: right;
+    }
+
+    #footer .profile{
+        /* font-size: 10px; */
+        padding-bottom: 0px;
+    }
+
+    #backtop{
+        width: 30px;
+        height: 30px;
+        bottom: 40px;
+        right: 20px;
+        font-size: 17px;
+    }
+}
+
+/* Mobile and Tablet */
+@media (max-width: 1023px){
+    .list-news{
+        margin: 0;
+        padding: 0;
+    }
+    .news-item{
+        padding: 0;
+    }
+}

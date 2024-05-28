@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root{
+    --color-body: #1a1a1a;
+    /* --color-header: #161617; */
+    --color-header: #000;
+    --color-main: #252525;
+    --color-footer: #000;
+    --color-text: #fff;
+    --color-news: #333;
+}
+html,body {
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--color-body);
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 1.25;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+/* MENU */
+.menu{
+    max-width: 1170px;
+    margin: 0px auto;
+    align-items: center;
+}
+.menu .logo img{
+    display: inline-block;
+    height: 60px;
+    width: 80px;
+}
+#fixed-header{
+    width: 100%;
+    position: sticky;
+    position: -webkit-sticky;
+    z-index: 100;
+    top: 0;
+    border-bottom: solid tomato;
+    background-color: var(--color-header);
+}
+#fixed-header .menu{
+    display: flex;
+}
+.menu ul{
+    list-style: none;
+    display: flex;
+}
+.menu ul li{
+    padding: 0px 20px;
+}
+.menu ul .list-item a{
+    display: inline-block;  
+    padding: 15px 0px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--color-text);
+    position: relative;
+}
+.menu ul .list-item a::after{
+    content: "";
+    height: 3px;
+    width: 0px;
+    background-color: tomato;
+    position: absolute;
+    bottom: 7px;
+    left: 0px;
+    transition: all 0.3s ease-in-out;
+}
+.menu ul .list-item a:hover::after{
+    width: 100%;
+}
+li.list-item button{
+    position: relative;
+    top: 14px;
+    left: -21px;
+    color: #333;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+}
+.menu .icon{
+    display: none;
+}
+.men.list-item form{
+    text-align: center;
+    align-items: center;
+}
+
+.menu .list-item input{
+    position: relative;
+    top: 13px;
+    border-radius: 5px;
+}
+/* CONTENT */
+
+.main{
+    /* width: 100%; */
+    color: var(--color-text);
+    /* background-color: var(--color-main); */
+}
+.main .main-content{
+    /* width: 1170px; */
+    /* margin: 10px auto; */
+}
+
+.main-content .banner-NHA,
+.main-content .banner-Laliga,
+.main-content .banner-Bundesliga,
+.main-content .banner-SerieA,
+.main-content .banner-Ligue1{
+    margin: 0;
+}
+.list-news {
+    /* list-style-type: none;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between; */
+    margin: 0 -4px !important;
+}
+
+.news-item .news-top a img{
+    width: 100%;
+    /* height: 90px; */
+    /* height: auto; */
+    border-radius: 6px
+}
+
+.list-news .news-item{
+    /* background-color: var(--color-news); */
+    /* border-radius: 5px; */
+    padding: 0;
+}
+
+.list-news .news-top{
+    padding: 4px;
+}
+
+.list-news h4{
+    padding: 0 4px;
+}
+
+.news-item .news-info a h4{
+    color: var(--color-text);
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+}
+.banner-img img{
+    /* margin-bottom: 30px; */
+    border-radius: 6px;
+    padding: 0;
+    width: 100%;
+}
+.button-xemthem{
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+}
+.button-xemthem a{
+    padding: 10px 40px;
+    border: 2px solid tomato;
+    color: var(--color-text);
+    border-radius: 5px;
+    font-weight: bold;
+}
+.button-xemthem a:hover{
+    font-size: 14px;
+}
+/* Footer */
+
+#footer{
+    width: 100%;
+    background-color: var(--color-footer);
+    color: var(--color-text);
+    font-size: 16px;
+}
+#footer .logo{
+    text-align: center;
+}
+#footer .profile{
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+#footer i{
+    padding: 0px 10px;
+    font-size: 25px;
+}
+#footer li{
+    padding: 8px;
+}
+#footer .footer-contact-right a{
+    color: tomato;
+}
+/* Back to top */
+#backtop{
+    width: 50px;
+    height: 50px;
+    background-color: tomato;
+    color: var(--color-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    font-size: 30px;
+
+}
+/* slide show */
